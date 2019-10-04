@@ -1,0 +1,209 @@
+/*--- Personalized css for webpage---*/
+
+/*--- top navigation bar ---*/
+.navbar {
+  background:#ffffff;
+}
+.nav-link,
+.navbar-brand {
+  color: #000000;
+  cursor: pointer;
+}
+.nav-link {
+  margin-right: 1em !important;
+}
+.nav-link:hover {
+  color: #000;
+}
+.navbar-collapse {
+  justify-content: flex-end;
+}
+/*--- header ---*/
+
+.header {
+	background-image: url('img/backgrounf.jpg');
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	height: 200px;
+  width: 50%;
+}
+
+
+
+.description {
+	left: 40%;
+	position: absolute;
+	top: 10%;
+	transform: translate(-50%, -55%);
+	text-align: left;
+}
+
+.description h3 {
+  color: #000000;
+}
+
+.description h4 {
+  color: #20B2AA;
+}
+
+
+.description p {
+	color: #000000;
+	font-size: 1.3rem;
+	line-height: 1.5;
+}
+
+.button {
+  background-color: #20B2AA; 
+  border: none;
+  color: white;
+  padding: 3px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; 
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #20B2AA;
+}
+
+.button1:hover {
+  background-color: #20B2AA;
+  color: white;
+}
+
+/*--- side navigation bar ---*/
+.icon-bar {
+  width: 65px; 
+}
+
+.icon-bar a {
+  display: block; /* Make the links appear below each other instead of side-by-side */
+  text-align: center; /* Center-align text */
+  padding: 20px; /* Add some padding */
+  transition: all 0.3s ease; /* Add transition for hover effects */
+  color: grey; /* White text color */
+  font-size: 36px; /* Increased font-size */
+}
+
+
+.active {
+	
+  background-color: black;
+  color: black;
+}
+/*--- Body of the webpage ---*/
+.features {
+  margin: 4em auto;
+  padding: 1em;
+  position: relative;
+}
+.feature-title {
+  color: #333;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.features img {
+  -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+  margin-bottom: 16px;
+}
+.temp
+{
+	padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+}
+
+.col-lg-4:hover .imgh
+{
+	background-image: url('img/icon1.png');
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	height: 100px;
+  width: 100px;
+}
+
+.imgh  {
+        background: url("img/icon2.jpg") no-repeat;
+		background-size: cover;
+	background-position: center;
+	position: relative;
+	height: 100px;
+  width: 100px;
+    }
+
+.col-lg-4:hover  {
+	background-color: grey;
+	color: white;
+}
+
+/*--- Footer of the webpage ---*/
+.footer {
+  background: #061D25;
+  padding: 10px 0;
+}
+.footer a {
+  color: #70726F;
+  font-size: 20px;
+  padding: 10px;
+  border-right: 1px solid #70726F;
+  transition: all .5s ease;
+}
+.footer a:first-child {
+  border-left: 1px solid #70726F;
+}
+.footer a:hover {
+  color: white;
+}
+.fot
+{
+	 color: white;
+}
+
+a
+{
+	color:black;
+	text-decoration: underline;
+}
+
+.foota {
+	color:white;
+}
+
+/*--- Simple  media query to display webpage in different browsers in different sizes properly---*/
+@media (max-width: 575.98px) {
+  .description {
+    left: 0;
+    padding: 0 15px;
+    position: absolute;
+    top: 10%;
+    transform: none;
+    text-align: center;
+  }
+  
+  .description h1 {
+    font-size: 2em;
+  }
+  
+  .description p {
+    font-size: 1.2rem;
+  }
+  
+  .features {
+    margin: 0;
+  }
+}
